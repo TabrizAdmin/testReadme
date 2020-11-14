@@ -1,7 +1,8 @@
 # Navano
+This is the readme file for Navano test and main servers.
 
 ## Composer
-After project pull into server we should run composer update
+After project pull into server we should run composer update.
 
 * there should be warnings in the composer update process. as project use lots of depricated package this is normal.
 
@@ -19,9 +20,9 @@ Delete the migrations table from the database and execute the new migrations int
 * This process will be done just one time at the beginning.
 
 ## Migrate
-Run php artisan migrate command after each commit. this will be needed for CI/CD
+Run php artisan migrate command after each commit. this will be needed for CI/CD.
 
 ## Ready the project
-Run "php artisan db:seed --class=PriorityTable"
+Run "php artisan db:seed --class=PriorityTable" .
 
 * This process will be done just one time at the beginning.
