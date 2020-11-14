@@ -22,6 +22,13 @@ Delete the migrations table from the database and execute the new migrations int
 ## Migrate
 Run php artisan migrate command after each commit. this will be needed for CI/CD.
 
+## Storage
+Make sure the "storage/app/public" and "bootstrap/cache" directories has read/right access. after that link the storage with "php artisan storage:link" command.
+
+After this make sure the created shortcut for storage inside public path has read and right access to the project and at the end move the storage data from old server into new server in the "storage/app/public" path.
+
+* This process will be done just one time at the beginning.
+
 ## Ready the project
 Run "php artisan db:seed --class=PriorityTable" .
 
