@@ -1,5 +1,5 @@
-# Nikzee
-This is the readme file for Nikzee test and main servers.
+# Navano
+This is the readme file for Navano test and main servers.
 
 ## Composer
 After project pull into server we should run composer update.
@@ -30,16 +30,7 @@ After this make sure the created shortcut for storage inside public path has rea
 * This process will be done just one time at the beginning.
 * For test server we do not need moving data from old server into storage.
 
-## FFMPEG
-<a href="https://ffmpeg.org/download.html">
-Install the ffmpeg package in the server.
-</a>
-
-After this copy the bin directory of ffmpeg and ffprobe into .env file at the end of file inside related places. Make sure the project has access into these directories.
+## Ready the project
+Run "php artisan db:seed --class=PriorityTable" .
 
 * This process will be done just one time at the beginning.
-
-## Handler
-There is two files in "app/Exceptions" directory. First copy Handler.nikzee.php file into a new Handler.php file.
-
-After that create a variable inside git with name "Handler". We need when this changed into "nikzee" then we need pipleline copy Handler.nikzee.php into Handler.php file. But if this change to "default" then Handler.default.php should be copied into Handler.php .
