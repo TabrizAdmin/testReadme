@@ -28,7 +28,7 @@ Make sure the "storage/app/public" and "bootstrap/cache" directories has read/ri
 After this make sure the created shortcut for storage inside public path has read and right access to the project and at the end move the storage data from old server into new server in the "storage/app/public" path.
 
 * This process will be done just one time at the beginning.
-* This process wont be required for test server.
+* For test server we do not need moving data from old server into storage.
 
 ## Ready the project
 Run "php artisan db:seed --class=PriorityTable" .
